@@ -9,169 +9,213 @@
 
 ### COUNTRIES
 
-data:country/us a ex:Country ;
-    rdfs:label "United States"@en ;
-    ex:isoCode "US" .
+data:country/us a ex:Country;
+    rdfs:label "United States"@en;
+    ex:isoCode "US".
 
-data:country/uk a ex:Country ;
-    rdfs:label "United Kingdom"@en ;
-    ex:isoCode "GB" .
+data:country/uk a ex: Country ;
+    rdfs:label "United Kingdom"@en;
+    ex:isoCode "GB".
 
-data:country/fr a ex:Country ;
-    rdfs:label "France"@en ;
-    ex:isoCode "FR" .
+data:country/fr a ex:Country;
+    rdfs:label "France"@en;
+    ex:isoCode "FR".
 
 ### STUDIOS
 
-data:studio/warner-bros a ex:Studio ;
-    foaf:name "Warner Bros. Pictures"@en ;
-    ex:foundedYear "1923"^^xsd:gYear ;
-    ex:moviesProduced 12500 ;
-    ex:basedIn data:country/us .
+data:studio/warner-bros a ex:Studio;
+    foaf:name "Warner Bros. Pictures"@en;
+    ex:foundedYear "1923"^^xsd:gYear;
+    ex:moviesProduced 12500;
+    ex:basedIn data:country/us.
 
-data:studio/universal a ex:Studio ;
-    foaf:name "Universal Pictures"@en ;
-    ex:foundedYear "1912"^^xsd:gYear ;
-    ex:moviesProduced 400 ;
-    ex:basedIn data:country/us .
+data:studio/universal a ex:Studio;
+    foaf:name "Universal Pictures"@en;
+    ex:foundedYear "1912"^^xsd:gYear;
+    ex:moviesProduced 400;
+    ex:basedIn data:country/us.
 
-data:studio/legendary a ex:Studio ;
-    foaf:name "Legendary Pictures"@en ;
-    ex:foundedYear "2000"^^xsd:gYear ;
-    ex:moviesProduced 70 ;
-    ex:basedIn data:country/us .
+data:studio/legendary a ex:Studio;
+    foaf:name "Legendary Pictures"@en;
+    ex:foundedYear "2000"^^xsd:gYear;
+    ex:moviesProduced 70;
+    ex:basedIn data:country/us.
 
 
-data:studio/pinewood a ex:Studio ;
-    foaf:name "Pinewood"@en ;
-    ex:foundedYear "1936"^^xsd:gYear ;
-    ex:moviesProduced 1500 ;
-    ex:basedIn data:country/uk .
+data:studio/pinewood a ex:Studio;
+    foaf:name "Pinewood"@en;
+    ex:foundedYear "1936"^^xsd:gYear;
+    ex:moviesProduced 1500;
+    ex:basedIn data:country/uk.
 
 
 ### CINEMAS
 
-data:cinema/imax-london a ex:Cinema ;
-    foaf:name "IMAX London"@en ;
-    ex:capacity 500 ;
-    ex:isLuxury true ;
-    ex:phone <tel:+441234567890> , <tel:+442345678901> ;
-    ex:locatedIn data:country/uk .
+data:cinema/imax-london a ex:Cinema;
+    foaf:name "IMAX London"@en;
+    ex:capacity 500;
+    ex:isLuxury true;
+    ex:phone <tel:+441234567890> , <tel:+442345678901>;
+    ex:locatedIn data:country/uk.
 
-data:cinema/amc-la a ex:Cinema ;
-    foaf:name "AMC Los Angeles"@en ;
-    ex:capacity 350 ;
-    ex:isLuxury false ;
-    ex:phone <tel:+133456789012> ;
-    ex:locatedIn data:country/us .
+data:cinema/amc-la a ex:Cinema;
+    foaf:name "AMC Los Angeles"@en;
+    ex:capacity 350;
+    ex:isLuxury false;
+    ex:phone <tel:+133456789012>;
+    ex:locatedIn data:country/us.
 
-data:cinema/le-grand-paris a ex:Cinema ;
-    foaf:name "Le Grand Paris"@en ;
-    ex:capacity 220 ;
-    ex:isLuxury true ;
-    ex:phone <tel:+330987654321> ;
-    ex:locatedIn data:country/fr .
+data:cinema/le-grand-paris a ex:Cinema;
+    foaf:name "Le Grand Paris"@en;
+    ex:capacity 220;
+    ex:isLuxury true;
+    ex:phone <tel:+330987654321>;
+    ex:locatedIn data:country/fr.
 
 
 ### PEOPLE: DIRECTORS & ACTORS
 
 # Directors
 
-data:person/christopher-nolan a ex:Director ;
-    foaf:name "Christopher Nolan"@en ;
-    ex:birthDate "1970-07-30"^^xsd:date ;
-    ex:activeSince "1998"^^xsd:gYear ;
-    ex:awardsCount 220 ;
-    ex:bornIn data:country/uk .
+data:person/christopher-nolan a ex:Director;
+    foaf:name "Christopher Nolan"@en;
+    ex:birthDate "1970-07-30"^^xsd:date;
+    ex:activeSince "1998"^^xsd:gYear;
+    ex:awardsCount 220;
+    ex:bornIn data:country/uk.
 
-data:person/denis-villeneuve a ex:Director ;
-    foaf:name "Denis Villeneuve"@en ;
-    ex:birthDate "1967-10-03"^^xsd:date ;
-    ex:activeSince "1994"^^xsd:gYear ;
-    ex:awardsCount 160 ;
-    ex:bornIn data:country/fr .
+data:person/denis-villeneuve a ex:Director;
+    foaf:name "Denis Villeneuve"@en;
+    ex:birthDate "1967-10-03"^^xsd:date;
+    ex:activeSince "1994"^^xsd:gYear;
+    ex:awardsCount 160;
+    ex:bornIn data:country/fr.
 
-data:person/patty-jenkins a ex:Director ;
-    foaf:name "Patty Jenkins"@en ;
-    ex:birthDate "1971-07-24"^^xsd:date ;
-    ex:activeSince "2003"^^xsd:gYear ;
-    ex:awardsCount 40 ;
-    ex:bornIn data:country/us .
+data:person/patty-jenkins a ex:Director;
+    foaf:name "Patty Jenkins"@en;
+    ex:birthDate "1971-07-24"^^xsd:date;
+    ex:activeSince "2003"^^xsd:gYear;
+    ex:awardsCount 40;
+    ex:bornIn data:country/us.
 
 # Actors
 
-data:person/leonardo-dicaprio a ex:Actor ;
-    foaf:name "Leonardo DiCaprio"@en ;
-    ex:birthDate "1974-11-11"^^xsd:date ;
-    ex:stageName "Leonardo DiCaprio"@en ;
-    ex:debutYear "1991"^^xsd:gYear ;
-    ex:bornIn data:country/us .
+data:person/leonardo-dicaprio a ex:Actor;
+    foaf:name "Leonardo DiCaprio"@en;
+    ex:birthDate "1974-11-11"^^xsd:date;
+    ex:stageName "Leonardo DiCaprio"@en;
+    ex:debutYear "1991"^^xsd:gYear;
+    ex:bornIn data:country/us.
 
-data:person/amy-adams a ex:Actor ;
-    foaf:name "Amy Adams"@en ;
-    ex:birthDate "1974-08-20"^^xsd:date ;
-    ex:stageName "Amy Adams"@en ;
-    ex:debutYear "1995"^^xsd:gYear ;
-    ex:bornIn data:country/us .
+data:person/amy-adams a ex:Actor;
+    foaf:name "Amy Adams"@en;
+    ex:birthDate "1974-08-20"^^xsd:date;
+    ex:stageName "Amy Adams"@en;
+    ex:debutYear "1995"^^xsd:gYear;
+    ex:bornIn data:country/us.
 
-data:person/gal-gadot a ex:Actor ;
-    foaf:name "Gal Gadot"@en ;
-    ex:birthDate "1985-04-30"^^xsd:date ;
-    ex:stageName "Gal Gadot"@en ;
-    ex:debutYear "2007"^^xsd:gYear ;
-    ex:bornIn data:country/us .
+data:person/gal-gadot a ex:Actor;
+    foaf:name "Gal Gadot"@en;
+    ex:birthDate "1985-04-30"^^xsd:date;
+    ex:stageName "Gal Gadot"@en;
+    ex:debutYear "2007"^^xsd:gYear;
+    ex:bornIn data:country/us.
 
 
 ### MOVIES
 
-data:movie/inception a ex:Movie ;
-    dcterms:title "Inception"@en ;
-    ex:durationMinutes 148 ;
-    ex:releaseDate "2010-07-16"^^xsd:date ;
-    ex:directedBy data:person/christopher-nolan ;
-    ex:producedBy data:studio/warner-bros .
+data:movie/inception a ex:Movie;
+    dcterms:title "Inception"@en;
+    ex:durationMinutes 148;
+    ex:releaseDate "2010-07-16"^^xsd:date;
+    ex:directedBy data:person/christopher-nolan;
+    ex:producedBy data:studio/warner-bros.
 
-data:movie/arrival a ex:Movie ;
-    dcterms:title "Arrival"@en ;
-    ex:durationMinutes 116 ;
-    ex:releaseDate "2016-11-11"^^xsd:date ;
-    ex:directedBy data:person/denis-villeneuve ;
-    ex:producedBy data:studio/legendary .
+data:movie/arrival a ex:Movie;
+    dcterms:title "Arrival"@en;
+    ex:durationMinutes 116;
+    ex:releaseDate "2016-11-11"^^xsd:date;
+    ex:directedBy data:person/denis-villeneuve;
+    ex:producedBy data:studio/legendary.
 
-data:movie/wonder-woman a ex:Movie ;
-    dcterms:title "Wonder Woman"@en ;
-    ex:durationMinutes 141 ;
-    ex:releaseDate "2017-06-02"^^xsd:date ;
-    ex:directedBy data:person/patty-jenkins ;
-    ex:producedBy data:studio/warner-bros .
-
-### ACTOR <-> MOVIE
-
-data:person/leonardo-dicaprio ex:actedIn data:movie/inception .
-data:person/amy-adams         ex:actedIn data:movie/arrival .
-data:person/gal-gadot         ex:actedIn data:movie/wonder-woman .
-data:person/amy-adams         ex:actedIn data:movie/inception .
-data:person/gal-gadot         ex:actedIn data:movie/arrival .
+data:movie/wonder-woman a ex:Movie;
+    dcterms:title "Wonder Woman"@en;
+    ex:durationMinutes 141;
+    ex:releaseDate "2017-06-02"^^xsd:date;
+    ex:directedBy data:person/patty-jenkins;
+    ex:producedBy data:studio/warner-bros.
 
 ### SCREENINGS
 
-data:screening/inc-lon-2024-06-01-2000 a ex:Screening ;
-    ex:shows data:movie/inception ;
-    ex:takesPlaceAt data:cinema/imax-london ;
-    ex:screeningDate "2024-06-01"^^xsd:date ;
-    ex:screeningTime "20:00:00"^^xsd:time ;
-    dcterms:language "en"^^xsd:language .
+data:screening/inc-lon-2024-06-01-2000;
+    ex:screeningDate "2024-06-01"^^xsd:date;
+    ex:screeningTime "20:00:00"^^xsd:time;
+    dcterms:language "en"^^xsd:language.
 
-data:screening/arr-la-2024-06-02-1800 a ex:Screening ;
-    ex:shows data:movie/arrival ;
-    ex:takesPlaceAt data:cinema/arcadia-la ;
-    ex:screeningDate "2024-06-02"^^xsd:date ;
-    ex:screeningTime "18:00:00"^^xsd:time ;
-    dcterms:language "en"^^xsd:language .
+data:screening/arr-la-2024-06-02-1800 a ex:Screening;
+    ex:shows data:movie/arrival;
+    ex:takesPlaceAt data:cinema/arcadia-la;
+    ex:screeningDate "2024-06-02"^^xsd:date;
+    ex:screeningTime "18:00:00"^^xsd:time;
+    dcterms:language "en"^^xsd:language.
 
-data:screening/ww-par-2024-06-03-1900 a ex:Screening ;
-    ex:shows data:movie/wonder-woman ;
-    ex:takesPlaceAt data:cinema/le-grand-paris ;
-    ex:screeningDate "2024-06-03"^^xsd:date ;
-    ex:screeningTime "19:00:00"^^xsd:time ;
-    dcterms:language "fr"^^xsd:language .
+data:screening/ww-par-2024-06-03-1900 a ex:Screening;
+    ex:shows data:movie/wonder-woman;
+    ex:takesPlaceAt data:cinema/le-grand-paris;
+    ex:screeningDate "2024-06-03"^^xsd:date;
+    ex:screeningTime "19:00:00"^^xsd:time;
+    dcterms:language "fr"^^xsd:language.
+
+### RELATIONS
+
+## MOVIE <-> DIRECTOR
+data:movie/inception ex:directedBy data:person/christopher-nolan.
+data:movie/arrival ex:directedBy data:person/denis-villeneuve.
+data:movie/wonder-woman ex:directedBy data:person/patty-jenkins.
+
+## MOVIE <-> STUDIO
+data:movie/inception ex:producedBy data:studio/warner-bros.
+data:movie/arrival ex:producedBy data:studio/legendary.
+data:movie/wonder-woman ex:producedBy data:studio/warner-bros.
+
+## Screening <-> MOVIE
+data:screening/inc-lon-2024-06-01-2000 ex:shows data:movie/inceptio.
+data:screening/arr-la-2024-06-02-1800 ex:shows data:movie/arrival.
+data:screening/ww-par-2024-06-03-1900 ex:shows data:movie/wonder-woman.
+
+##SCREENING <-> CINEMA
+data:screening/inc-lon-2024-06-01-2000 ex:takesPlaceAt data:cinema/imax-london.
+data:screening/arr-la-2024-06-02-1800 ex:takesPlaceAt data:cinema/amc-la.
+data:screening/ww-par-2024-06-03-1900 ex:takesPlaceAt data:cinema/le-grand-paris. 
+
+## CINEMA <-> COUNTRY
+data:cinema/imax-london ex:locatedIn data:country/uk.
+data:cinema/amc-la ex:locatedIn data:country/us.
+data:cinema/le-grand-paris ex:locatedIn data:country/fr.
+
+##STUDIO <-> COUNTRY
+data:studio/warner-bros ex:basedIn data:country/us.
+data:studio/legendary ex:basedIn data:country/us.
+data:studio/universal ex:basedIn data:country/us.
+data:studio/pinewood ex:basedIn data:country/uk.
+
+## MOVIE → DIRECTOR
+data:movie/inception ex:directedBy data:person/christopher-nolan.
+data:movie/arrival ex:directedBy data:person/denis-villeneuve.
+data:movie/wonder-woman ex:directedBy data:person/patty-jenkins.
+
+## COUNTRY <-> PERSON
+data:person/christopher-nolan ex:bornIn data:country/uk.
+data:person/denis-villeneuve ex:bornIn data:country/fr.
+data:person/patty-jenkins ex:bornIn data:country/us.
+data:person/leonardo-dicaprio ex:bornIn data:country/us.
+data:person/amy-adams ex:bornIn data:country/us.
+data:person/gal-gadot ex:bornIn data:country/us.
+
+### ACTOR <-> MOVIE
+
+data:person/leonardo-dicaprio ex:actedIn data:movie/inception.
+data:person/amy-adams ex:actedIn data:movie/arrival.
+data:person/gal-gadot ex:actedIn data:movie/wonder-woman.
+data:person/amy-adams ex:actedIn data:movie/inception.
+data:person/gal-gadot ex:actedIn data:movie/arrival.
